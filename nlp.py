@@ -8,9 +8,9 @@ wds2=sent2.split()
 totalwords=set(wds1).union(set(wds2))
 wdd1=dict.formkeys(total,0)
 wdd2=dict.formkeys(total,0)
-for word in sen1:
+for word in wds1:
   wdd1[word]+=1
-for word in sen2:
+for word in wds2:
   wdd2[word]+=1
 def computeTF(worddict,sen):
   tfdict={}
